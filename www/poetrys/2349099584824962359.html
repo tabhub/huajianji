@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 谒衡岳庙遂宿岳寺题门楼 | 唐诗三百首 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+            
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00068.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    谒衡岳庙遂宿岳寺题门楼
+                </div>
+                <div class="author">
+                    韩愈
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>五岳祭秩皆三公，四方环镇嵩当中。</p>
+                     
+                    <p>火维地荒足妖怪，天假神柄专其雄。</p>
+                     
+                    <p>喷云泄雾藏半腹，虽有绝顶谁能穷？</p>
+                     
+                    <p>我来正逢秋雨节，阴气晦昧无清风。</p>
+                     
+                    <p>潜心默祷若有应，岂非正直能感通！</p>
+                     
+                    <p>须臾静扫众峰出，仰见突兀撑青空。</p>
+                     
+                    <p>紫盖连延接天柱，石廪腾掷堆祝融。</p>
+                     
+                    <p>森然魄动下马拜，松柏一径趋灵宫。</p>
+                     
+                    <p>粉墙丹柱动光彩，鬼物图画填青红。</p>
+                     
+                    <p>升阶伛偻荐脯酒，欲以菲薄明其衷。</p>
+                     
+                    <p>庙令老人识神意，睢盱侦伺能鞠躬。</p>
+                     
+                    <p>手持杯珓导我掷，云此最吉余难同。</p>
+                     
+                    <p>窜逐蛮荒幸不死，衣食才足甘长终。</p>
+                     
+                    <p>侯王将相望久绝，神纵欲福难为功。</p>
+                     
+                    <p>夜投佛寺上高阁，星月掩映云曈昽。</p>
+                     
+                    <p>猿鸣钟动不知曙，杲杲寒日生于东。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/唐诗三百首.html">唐诗三百首</a></p>
+                    <p></p>
+                    <p>唐代</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="mobile">
+                <div id="footer" class="content">
+                    <div id="jinrishici-tag">长恨</div>
+                    <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+                </div>
+
+                <div class="end content">
+                    <p>© <a class="link under" href="https://jackeygao.io">JackeyGao.io</a> 2019</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 韩奕 | 大雅-荡之什 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+            
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00049.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    韩奕
+                </div>
+                <div class="author">
+                    佚名
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>奕奕梁山，维禹甸之，有倬其道。韩侯受命，王亲命之：缵戎祖考，无废朕命。</p>
+                     
+                    <p>夙夜匪解，虔共尔位，朕命不易。粲不庭方，以佐戎辟。</p>
+                     
+                    <p>四牡奕奕，孔修且张。韩侯入觐，以其介圭，入觐于王。王锡韩侯，淑旂绥章，</p>
+                     
+                    <p>簟茀错衡，玄衮赤舄，钩膺镂锡，鞹鞃浅幭，鞗革金厄。</p>
+                     
+                    <p>韩侯出祖，出宿于屠。显父饯之，清酒百壶。其殽维何？炰鳖鲜鱼。其蔌维何？</p>
+                     
+                    <p>维笋及蒲。其赠维何？乘马路车。笾豆有且。侯氏燕胥。</p>
+                     
+                    <p>韩侯取妻，汾王之甥，蹶父之子。韩侯迎止，于蹶之里。百两彭彭，八鸾锵锵，</p>
+                     
+                    <p>不显其光。诸娣从之，祁祁如云。韩侯顾之，烂其盈门。</p>
+                     
+                    <p>蹶父孔武，靡国不到。为韩姞相攸，莫如韩乐。孔乐韩土，川泽訏訏，鲂鱮甫甫，</p>
+                     
+                    <p>麀鹿噳噳，有熊有罴，有猫有虎。庆既令居，韩姞燕誉。</p>
+                     
+                    <p>溥彼韩城，燕师所完。以先祖受命，因时百蛮。王锡韩侯，其追其貊。奄受北国，</p>
+                     
+                    <p>因以其伯。实墉实壑，实亩实藉。献其貔皮，赤豹黄罴。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/大雅-荡之什.html">大雅-荡之什</a></p>
+                    <p></p>
+                    <p>大雅-荡之什</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="mobile">
+                <div id="footer" class="content">
+                    <div id="jinrishici-tag">长恨</div>
+                    <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+                </div>
+
+                <div class="end content">
+                    <p>© <a class="link under" href="https://jackeygao.io">JackeyGao.io</a> 2019</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

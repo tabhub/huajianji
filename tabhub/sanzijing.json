@@ -1,0 +1,17 @@
+{
+  "name": "三字经",
+  "type": "resource",
+  "version": "1.0",
+  "items": [
+    {
+      "name": "2765689838313100224",
+      "type": "tabhub-app",
+      "url": "https://tabhub.io/huajianji/www/poetrys/2765689838313100224.html"
+    },
+    {
+      "name": "9146550296053914306",
+      "type": "tabhub-app",
+      "url": "https://tabhub.io/huajianji/www/poetrys/9146550296053914306.html"
+    }
+  ]
+}

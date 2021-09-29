@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 韋諷錄事宅觀曹將軍畫馬 | 七言古詩 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+            
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00051.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    韋諷錄事宅觀曹將軍畫馬
+                </div>
+                <div class="author">
+                    杜甫
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>國初已來畫鞍馬，神妙獨數江都王。</p>
+                     
+                    <p>將軍得名三十載，人間又見真乘黃。</p>
+                     
+                    <p>曾貌先帝照夜白，龍池十日飛霹靂。</p>
+                     
+                    <p>內府殷紅瑪瑙盤，婕妤傳詔才人索。</p>
+                     
+                    <p>盤賜將軍拜舞歸，輕紈細綺相追飛。</p>
+                     
+                    <p>貴戚權門得筆跡，始覺屏障生光輝。</p>
+                     
+                    <p>昔日太宗拳毛騧，近時郭家獅子花。</p>
+                     
+                    <p>今之新圖有二馬，復令識者久嘆嗟。</p>
+                     
+                    <p>此皆騎戰一敵萬，縞素漠漠開風沙。</p>
+                     
+                    <p>其餘七匹亦殊絕，迥若寒空動煙雪。</p>
+                     
+                    <p>霜蹄蹴踏長楸間，馬官廝養森成列。</p>
+                     
+                    <p>可憐九馬爭神駿，顧視清高氣深穩。</p>
+                     
+                    <p>借問苦心愛者誰，後有韋諷前支遁。</p>
+                     
+                    <p>憶昔巡幸新豐宮，翠華拂天來向東。</p>
+                     
+                    <p>騰驤磊落三萬匹，皆與此圖筋骨同。</p>
+                     
+                    <p>自從獻寶朝河宗，無復射蛟江水中。</p>
+                     
+                    <p>君不見金粟堆前松柏裏，龍媒去盡鳥呼風。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/七言古詩.html">七言古詩</a></p>
+                    <p></p>
+                    <p>唐代</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="mobile">
+                <div id="footer" class="content">
+                    <div id="jinrishici-tag">长恨</div>
+                    <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+                </div>
+
+                <div class="end content">
+                    <p>© <a class="link under" href="https://jackeygao.io">JackeyGao.io</a> 2019</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>
