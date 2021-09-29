@@ -1,9 +1,22 @@
-中文诗歌
+中文诗词集 Classical Chinese poetry collections
 =======
 
-为什么叫花间集?
+You can copy one of link addresses below as a resource url to add in your [TabHub](https://tabhub.io) settings:
 
-因为一开始就做了花间集的展示, 后来又增加了多个书籍. 仓库的名字也没有改.
+* [花间集](https://raw.githubusercontent.com/tabhub/huajianji/master/tabhub/huajianji.json)
+* [南唐二主词](https://raw.githubusercontent.com/tabhub/huajianji/master/tabhub/erzhuci.json)
+* [唐诗三百首](https://raw.githubusercontent.com/tabhub/huajianji/master/tabhub/tangshi300.json)
+* [宋词三百首](https://raw.githubusercontent.com/tabhub/huajianji/master/tabhub/songci300.json)
+* [教科书选诗](https://raw.githubusercontent.com/tabhub/huajianji/master/tabhub/jks_shixuan.json)
+* [古诗十九首](https://raw.githubusercontent.com/tabhub/huajianji/master/tabhub/gushi19.json)
+* [诗经](https://raw.githubusercontent.com/tabhub/huajianji/master/tabhub/shijing.json)
+* [千家诗](https://raw.githubusercontent.com/tabhub/huajianji/master/tabhub/qianjiashi.json)
+* [声律启蒙](https://raw.githubusercontent.com/tabhub/huajianji/master/tabhub/shenglvqimeng.json)
+* [三字经](https://raw.githubusercontent.com/tabhub/huajianji/master/tabhub/sanzijing.json)
+* [唐诗三百首·蒙学](https://raw.githubusercontent.com/tabhub/huajianji/master/tabhub/tangshi300mengxue.json)
 
 
-[http://shici.store/huajianji/](http://shici.store/huajianji/)
+---
+
+<img src=https://raw.githubusercontent.com/image-store/github/master/add-tabhub-resource-url.png width=350>
+
