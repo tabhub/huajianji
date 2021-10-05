@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 板 | 大雅-生民之什 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+            
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00050.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    板
+                </div>
+                <div class="author">
+                    佚名
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>上帝板板，下民卒瘅。出话不然，为犹不远。</p>
+                     
+                    <p>靡圣管管。不实于亶。犹之未远，是用大谏。</p>
+                     
+                    <p>天之方难，无然宪宪。天之方蹶，无然泄泄。</p>
+                     
+                    <p>辞之辑矣，民之洽矣。辞之怿矣，民之莫矣。</p>
+                     
+                    <p>我虽异事，及尔同僚。我即尔谋，听我嚣嚣。</p>
+                     
+                    <p>我言维服，勿以为笑。先民有言，询于刍荛。</p>
+                     
+                    <p>天之方虐，无然谑谑。老夫灌灌，小子蹻蹻。</p>
+                     
+                    <p>匪我言耄，尔用忧谑。多将熇熇，不可救药。</p>
+                     
+                    <p>天之方懠。无为夸毗。威仪卒迷，善人载尸。</p>
+                     
+                    <p>民之方殿屎，则莫我敢葵？丧乱蔑资，曾莫惠我师？</p>
+                     
+                    <p>天之牖民，如埙如篪，如璋如圭，如取如携。</p>
+                     
+                    <p>携无曰益，牖民孔易。民之多辟，无自立辟。</p>
+                     
+                    <p>价人维藩，大师维垣，大邦维屏，大宗维翰，</p>
+                     
+                    <p>怀德维宁，宗子维城。无俾城坏，无独斯畏。</p>
+                     
+                    <p>敬天之怒，无敢戏豫。敬天之渝，无敢驰驱。</p>
+                     
+                    <p>昊天曰明，及尔出王。昊天曰旦，及尔游衍。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/大雅-生民之什.html">大雅-生民之什</a></p>
+                    <p></p>
+                    <p>大雅-生民之什</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="mobile">
+                <div id="footer" class="content">
+                    <div id="jinrishici-tag">长恨</div>
+                    <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+                </div>
+
+                <div class="end content">
+                    <p>© <a class="link under" href="https://jackeygao.io">JackeyGao.io</a> 2019</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 十三 覃 | 下卷 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+            
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00016.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    十三 覃
+                </div>
+                <div class="author">
+                    
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>千對百，兩對三，地北對天南。佛堂對仙洞，道院對禪庵。山潑黛，水浮藍，雪嶺對雲潭。鳳飛方翽翽，虎視已眈眈。窗下書生時諷詠，筵前酒客日耽酣。白草滿郊，秋日牧徵人之馬；綠桑盈畝，春時供農婦之蠶。</p>
+                     
+                    <p>將對欲，可對堪，德被對恩覃。權衡對尺度，雪寺對雲庵。安邑棗，洞庭柑，不愧對無慚。魏徵能直諫，王衍善清談。紫梨摘去從山北，丹荔傳來自海南。攘雞非君子所爲，但當月一；養狙是山公之智，止用朝三。</p>
+                     
+                    <p>中對外，北對南，貝母對宜男。移山對浚井，諫苦對言甘。千取百，二爲三，魏尚對周堪。海門翻夕浪，山市擁晴嵐。新締直投公子紵，舊交猶脫館人驂。文達淹通，已詠冰兮寒過水；永和博雅，可知青者勝於藍。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/下卷.html">下卷</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="mobile">
+                <div id="footer" class="content">
+                    <div id="jinrishici-tag">长恨</div>
+                    <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+                </div>
+
+                <div class="end content">
+                    <p>© <a class="link under" href="https://jackeygao.io">JackeyGao.io</a> 2019</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>
